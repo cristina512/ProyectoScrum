@@ -1,0 +1,177 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #76c7c0;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.progress {
+    text-align: center;
+}
+
+.progress p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #76c7c0;
+    border-radius: 5px;
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: 2px solid #76c7c0; /* Borde del botón */
+    background-color: transparent; /* Fondo transparente */
+    color: #76c7c0; /* Color del texto */
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.buttons button:hover {
+    background-color: #76c7c0; /* Fondo al pasar el ratón */
+    color: white; /* Color del texto al pasar el ratón */
+}
+
+/* Línea divisoria */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+/* Tablero Kanban */
+.kanban-board {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.column {
+    background-color: rgba(118, 199, 192, 0.5); /* Color #76c7c0 con opacidad */
+    border-radius: 8px;
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.column h2 {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.task {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el calendario */
+.calendar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+.calendar-header {
+    background-color: #76c7c0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.month-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+}
+
+.day-name {
+    font-weight: bold;
+    color: #76c7c0;
+}
+
+.day {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.day:hover {
+    background-color: #76c7c0;
+    color: white;
+}
