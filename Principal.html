@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="EstiloPrincipal.css">
 </head>
 <body>
+
     <!-- Encabezado -->
     <header>
         <div class="logo">
@@ -29,32 +30,48 @@
     <hr>
 
     <!-- Tablero Kanban -->
-    <div class="kanban-board">
-        <div class="column">
-            <h2>IMPORTANCIA</h2>
-            <div class="task">Tarea 1</div>
-            <div class="task">Tarea 2</div>
+    <form method="POST">
+        <div class="kanban-board">
+            <div class="column">
+                
+                <h2>IMPORTANCIA</h2>
+                <label class="task"><input type="checkbox" name="tarea1"> <span class="task-text">Tarea 1 </span></label>
+                <div class="square"></div>
+<div class="square1"></div>
+                <label class="task"><input type="checkbox" name="tarea2"> <span class="task-text">Tarea 2</span></label>
+            <div class="square"></div>
+            </div>
+            <div class="column">
+                <h2>TO DO</h2>
+                <label class="task"><input type="checkbox" name="tarea3"> <span class="task-text">Tarea 3</span></label>
+                <div class="square"></div>
+            </div>
+            <div class="column">
+                <h2>EN PROCESO</h2>
+                <label class="task"><input type="checkbox" name="tarea4"> <span class="task-text">Tarea 4</span></label>
+                <div class="square"></div>
+                <div class="square1"></div>
+                <label class="task"><input type="checkbox" name="tarea5"> <span class="task-text">Tarea 5</span></label>
+                <div class="square"></div>
+            </div>
+            <div class="column">
+                <h2>REVISIÓN</h2>
+                <label class="task"><input type="checkbox" name="tarea6"> <span class="task-text">Tarea 6</span></label>
+                <div class="square"></div>
+            </div>
+            <div class="column terminado">
+                <h2>TERMINADO</h2>
+                <label class="task completed"><input type="checkbox" name="tarea7" checked> <span class="task-text">Tarea 7</span></label>
+                <div class="square"></div>
+                <div class="square1"></div>
+                <label class="task completed"><input type="checkbox" name="tarea8" checked> <span class="task-text">Tarea 8</span></label>
+                <div class="square"></div>
+            </div>
         </div>
-        <div class="column">
-            <h2>TO DO</h2>
-            <div class="task">Tarea 3</div>
-        </div>
-        <div class="column">
-            <h2>EN PROCESO</h2>
-            <div class="task">Tarea 4</div>
-            <div class="task">Tarea 5</div>
-        </div>
-        <div class="column">
-            <h2>REVISIÓN</h2>
-            <div class="task">Tarea 4</div>
-            <div class="task">Tarea 5</div>
-        </div>
-        <div class="column">
-            <h2>TERMINADO</h2>
-            <div class="task">Tarea 4</div>
-            <div class="task">Tarea 5</div>
-        </div>
-    </div>
+        <button type="submit" class="submit-btn">Actualizar</button>
+    </form>
+
+    <!-- Calendario -->
     <div class="calendar">
         <div class="calendar-header">
             <span class="month-name">Enero 2025</span>
@@ -68,8 +85,7 @@
                 <div class="day-name">Jue</div>
                 <div class="day-name">Vie</div>
                 <div class="day-name">Sáb</div>
-                <!-- Días del mes (simulación de un mes con 31 días) -->
-                <div class="day"></div>
+                <!-- Espacios para los días -->
                 <div class="day"></div>
                 <div class="day"></div>
                 <div class="day"></div>
@@ -104,6 +120,6 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 </html>
