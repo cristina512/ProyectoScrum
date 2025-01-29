@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Contenedor de tareas */
+  .task {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .task h2 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 20px;
+  }
+  
+  /* Sección de importancia */
+  .importancia {
+    margin-top: 15px;
+  }
+  
+  .importancia label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555555;
+  }
+  
+  .importancia span {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .importancia-alta {
+    background-color: #e63946; 
+  }
+  
+  .importancia-media {
+    background-color: #f4a261; 
+  }
+  
+  .importancia-baja {
+    background-color: #2a9d8f; 
+  }
+  
+  /* Sección de etiquetas */
+  .etiquetas {
+    margin-top: 15px;
+  }
+  
+  .etiquetas label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555555;
+  }
+  
+  .etiquetas .etiqueta {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #0077b6; /* Azul brillante */
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  

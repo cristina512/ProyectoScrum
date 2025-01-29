@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación y Gestor de Tareas</title>
+    <link rel="stylesheet" href="EstiloPrincipal.css">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <div class="logo-icon">KT</div>
+            <h1>KanbanTask</h1>
+        </div>
+        <div class="progress">
+            <p>05/12 Tareas cerradas - 10 horas dedicadas</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 42%;"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Login</button>
+            <button>Sign In</button>
+        </div>
+    </header>
+
+    <!-- Línea divisoria -->
+    <hr>
+
+    <!-- Tablero Kanban -->
+    <form method="POST">
+        <div class="kanban-board">
+            <div class="column">
+                
+                <h2>IMPORTANCIA</h2>
+                <label class="task"><input type="checkbox" name="tarea1"> <span class="task-text">Tarea 1 </span></label>
+                <div class="square"></div>
+<div class="square1"></div>
+                <label class="task"><input type="checkbox" name="tarea2"> <span class="task-text">Tarea 2</span></label>
+            <div class="square"></div>
+            </div>
+            <div class="column">
+                <h2>TO DO</h2>
+                <label class="task"><input type="checkbox" name="tarea3"> <span class="task-text">Tarea 3</span></label>
+                <div class="square"></div>
+            </div>
+            <div class="column">
+                <h2>EN PROCESO</h2>
+                <label class="task"><input type="checkbox" name="tarea4"> <span class="task-text">Tarea 4</span></label>
+                <div class="square"></div>
+                <div class="square1"></div>
+                <label class="task"><input type="checkbox" name="tarea5"> <span class="task-text">Tarea 5</span></label>
+                <div class="square"></div>
+            </div>
+            <div class="column">
+                <h2>REVISIÓN</h2>
+                <label class="task"><input type="checkbox" name="tarea6"> <span class="task-text">Tarea 6</span></label>
+                <div class="square"></div>
+            </div>
+            <div class="column terminado">
+                <h2>TERMINADO</h2>
+                <label class="task completed"><input type="checkbox" name="tarea7" checked> <span class="task-text">Tarea 7</span></label>
+                <div class="square"></div>
+                <div class="square1"></div>
+                <label class="task completed"><input type="checkbox" name="tarea8" checked> <span class="task-text">Tarea 8</span></label>
+                <div class="square"></div>
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">Actualizar</button>
+    </form>
+
+    <!-- Calendario -->
+    <div class="calendar">
+        <div class="calendar-header">
+            <span class="month-name">Enero 2025</span>
+        </div>
+        <div class="calendar-body">
+            <div class="calendar-grid">
+                <div class="day-name">Dom</div>
+                <div class="day-name">Lun</div>
+                <div class="day-name">Mar</div>
+                <div class="day-name">Mié</div>
+                <div class="day-name">Jue</div>
+                <div class="day-name">Vie</div>
+                <div class="day-name">Sáb</div>
+                <!-- Espacios para los días -->
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
