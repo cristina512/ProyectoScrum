@@ -1,0 +1,8 @@
+-- Obtener las tareas asignadas con el nombre del usuario responsable
+SELECT 
+    T.ID_TAREA, 
+    T.DESCRIPCION, 
+    U.NOMBRE AS RESPONSABLE
+FROM TAREA T
+JOIN ASIGNACION_TAREAS AT ON T.ID_TAREA = AT.ID_TAREA
+JOIN USUARIO U ON AT.ID_USUARIO = U.ID_USUARIO;
