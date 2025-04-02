@@ -1,22 +1,22 @@
 CREATE TABLE GESTOR (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE USUARIO (
-    id INT PRIMARY KEY AUTO_INCREMENT,
+    id INT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
     gestor_id INT,
     CONSTRAINT fk_gestor FOREIGN KEY (gestor_id) REFERENCES GESTOR(id)
 );
 
 CREATE TABLE Equipo (
-    id_equipo INT PRIMARY KEY AUTO_INCREMENT,
+    id_equipo INT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Tarea (
-    id_tarea INT PRIMARY KEY AUTO_INCREMENT,
+    id_tarea INT PRIMARY KEY,
     descripcion VARCHAR(255) NOT NULL,
     fecha_limite DATE,
     usuario_creador_id INT NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE Usuario_Equipo (
 );
 
 CREATE TABLE Asignacion_Tarea (
-    id_asignacion INT PRIMARY KEY AUTO_INCREMENT,
+    id_asignacion INT PRIMARY KEY,
     tarea_id INT NOT NULL,
     usuario_asigna_id INT NOT NULL,
     usuario_recibe_id INT NOT NULL,
