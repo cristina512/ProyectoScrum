@@ -1,0 +1,14 @@
+--Consultas
+
+--Consulta para obtener los equipos y los usuarios que pertenecen a esos equipos:
+SELECT 
+EQUIPO.NOMBRE AS EQUIPO, 
+USUARIO.NOMBRE AS USUARIO
+FROM 
+USUARIO_EQUIPO
+JOIN 
+    USUARIO ON USUARIO_EQUIPO.ID_USUARIO = USUARIO.ID_USUARIO
+JOIN 
+    EQUIPO ON USUARIO_EQUIPO.ID_EQUIPO = EQUIPO.ID_EQUIPO;
+
+
